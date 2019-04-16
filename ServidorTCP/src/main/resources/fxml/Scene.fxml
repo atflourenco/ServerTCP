@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400" prefWidth="640" xmlns:fx="http://javafx.com/fxml" fx:controller="br.com.atfl.comunicacaotcp.run.FXMLController">
+    <children>
+        <Label layoutX="126" layoutY="30" fx:id="inputLbl" alignment="CENTER_LEFT" cache="true" cacheHint="SCALE" prefHeight="30.0" prefWidth="200.0" text="Porta:" textAlignment="LEFT" />
+        <TextField fx:id="portaText" prefWidth="100.0" layoutX="126" layoutY="60"/>
+        <Button layoutX="126" layoutY="100" text="Iniciar" onAction="#handleButtonAction" fx:id="buttonInit" />
+        <Label layoutX="126" layoutY="200" minHeight="16" minWidth="69" fx:id="label" />
+        <Button layoutX="226" layoutY="100" text="Parar" onAction="#handleButtonStopAction" fx:id="buttonStop" />
+        <Button layoutX="326" layoutY="100" text="Usuários Conectados" onAction="#handleButtonUserAction" fx:id="buttonUsuarios" />
+        <Button fx:id="closeButton" onAction="#closeButtonAction" layoutX="526" layoutY="100" text="Fechar"/>
+        
+    </children>
+</AnchorPane>
